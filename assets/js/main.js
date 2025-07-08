@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const modal = document.getElementById("pokemon-modal");
     const closeButton = document.querySelector(".close-button");
 
-    const maxRecords = 1300;
+    const maxRecords = 1302;
     const limit = 21;
     let offset = 0;
 
