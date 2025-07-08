@@ -1,0 +1,29 @@
+/* Reset */
+@import url('./reset.css');
+
+* {    
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box; 
+}
+
+body {
+    background-color: rgba(19, 58, 196, 0.26);
+    overflow-x: hidden;
+}
+
+.content {
+    width: 100vw;
+    height: 100vh;
+    padding: 1rem;
+    background-color: rgba(57, 165, 118, 0.35);
+    border: 1px solid #a7a1a105;
+}
+
+@media screen and (min-width: 992px) {
+    .content {
+        max-width: 992px;
+        height: auto;
+        margin: 1rem auto;
+        border-radius: 1rem;
+    }
+}

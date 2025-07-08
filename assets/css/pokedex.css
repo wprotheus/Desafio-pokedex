@@ -1,0 +1,266 @@
+.pokemons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.normal {
+    background-color: #a6a877;
+}
+
+.grass {
+    background-color: #77c850;
+}
+
+.fire {
+    background-color: #ee7f30;
+}
+
+.water {
+    background-color: #678fee;
+}
+
+.electric {
+    background-color: #f7cf2e;
+}
+
+.ice {
+    background-color: #98d5d7;
+}
+
+.ground {
+    background-color: #dfbf69;
+}
+
+.flying {
+    background-color: #a98ff0;
+}
+
+.poison {
+    background-color: #a040a0;
+}
+
+.fighting {
+    background-color: #bf3029;
+}
+
+.psychic {
+    background-color: #f65687;
+}
+
+.dark {
+    background-color: #725847;
+}
+
+.rock {
+    background-color: #b8a137;
+}
+
+.bug {
+    background-color: #a8b720;
+}
+
+.ghost {
+    background-color: #6e5896;
+}
+
+.steel {
+    background-color: #b9b7cf;
+}
+
+.dragon {
+    background-color: #6f38f6;
+}
+
+.fairy {
+    background-color: #f9aec7;
+}
+
+header h1 {
+    flex-grow: 1;
+    text-transform: uppercase;
+    font-size: 2.6rem;
+    text-align: center;
+    margin: 0;
+}
+
+.pokemon {
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(68, 67, 67, 0.5);
+    border: 1px solid #7e7b7b;
+}
+
+.pokemon:hover {
+    cursor: pointer;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+    transform: scale(1.05);
+}
+
+.pokemon .number {
+    color: #000;
+    opacity: .3;
+    text-align: right;
+    font-size: .625rem;
+}
+
+.pokemon .name {
+    text-transform: capitalize;
+    color: #fff;
+    margin-bottom: .25rem;
+}
+
+.pokemon .detail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pokemon .detail .types {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.pokemon .detail .types .type {
+    color: #fff;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    font-size: .625rem;
+    border-radius: 1rem;
+    filter: brightness(1.1);
+    text-align: center;
+}
+
+.pokemon .detail img {
+    max-width: 100%;
+    height: 70px;
+}
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+.pagination button {
+    padding: 8px;
+    margin: .5rem 0;
+    font-size: 0.8rem;
+    color: #fff;
+    background-color: #6c79db;
+    border: none;
+    border-radius: 8px;
+}
+
+/* MODAL */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(53, 161, 117);
+    padding: 16px;
+    border-radius: 11px;
+    box-shadow: 8px 8px 8px rgb(89, 89, 260);
+    z-index: 1000;
+    width: 23rem;
+    max-width: 90vw;
+    height: 33rem;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Torna o modal visível quando .show está presente */
+.modal.show {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    border-radius: 11px;
+    border: 2px solid #7e7b7b;
+    background-color: rgba(171, 220, 171, 0.8);
+    box-shadow: inset 8px 8px 8px rgb(53, 161, 117), 8px 8px 8px rgba(171, 220, 171, 0.8);
+}
+
+.modal-header h2 {
+    margin-top: 16px;
+    font-size: 1.5rem;
+    color: #041660;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.modal-characteristics {
+    align-items: start;
+    width: 100%;
+    padding: 10px;
+}
+
+.modal-characteristics p {
+    font-size: 1.1rem;
+    color: #000;
+    line-height: 1.5em;
+}
+
+
+.modal-image {
+    max-width: 100%;
+    height: 11.7em;
+}
+
+.modal-image img {
+    max-width: 180px;
+    max-height: 206px;
+    display: block;
+    margin: 35px 0;
+    filter: drop-shadow(4px 4px 10px rgb(3, 11, 52));
+}
+
+.close-button {
+    position: fixed;
+    top: 16px;
+    right: 17px;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 1.7rem;
+    color: #000;
+    background: transparent;
+    border-radius: 0 10px 0 0;
+    z-index: 1001;
+}
+
+.close-button:hover {
+    background: #3b0202;
+    color: #fff;
+    border: 2px solid rgb(100, 3, 3);;
+}
