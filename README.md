@@ -13,7 +13,7 @@ O resultado do desafio é composto pelas alterações e ajustes que achei necess
 
 ---  
 
-#### ***Resultado final do desafio -=-> [POKEDEX]()***
+#### ***Resultado final do desafio -=-> [POKEDEX](https://wprotheus.github.io/Desafio-pokedex/)***
 
 ---
 
@@ -32,4 +32,4 @@ O resultado do desafio é composto pelas alterações e ajustes que achei necess
 
 > Entenda a importância do Git/GitHub nos Desafios de Projeto da DIO, além de explorar o mundo Pokémon através do consumo de uma API REST para a criação de uma Pokédex incrível! Para isso, você irá explorar, além do JavaScript, todos os fundamentos de desenvolvimento Web aprendidos até aqui.
 
-> ***JavaScript | HTML | CSS ***
+***JavaScript | HTML | CSS ***
